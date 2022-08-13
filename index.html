@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!--CSS do Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"><!--Importante, faz os icons aparecerem no footrer-->
+        <link rel="stylesheet" href="css/footerindex.css"><!--CSS do footer-->
+        <link rel="stylesheet" href="css/estilobuttonzapinstaface.css"><!--CSS dos Icons das redes sociais-->
+        <link rel="stylesheet" href="css/cardindex.css"><!--CSS do Card -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Menu</title>
+        <style>
+            ::-webkit-scrollbar{
+                width: 10px;
+            }::-webkit-scrollbar-track{
+                background: #DD7E00;
+                border-radius: 30px;
+            }::-webkit-scrollbar-thumb{
+                background: #000000;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body style="background-color: #DD7E00;" onload="boasvindas()">
+        <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Hotel Urbano</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reserva</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acomodações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Serviços</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!--Terimino do Navbar-->
+
+        <!--Carousel-->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="img/imhhotel.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/imghotel_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imghotel_2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        <!--Termino do Carousel-->
+
+       <!--Cards-->
+       <div class="main">
+        <h1 style="color: rgb(255, 255, 255);"><b>Fique por dentro:</b></h1>
+        <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/iconreserva.png" style="width: 5555.5%;height: 95%;">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Reserva</h2>
+                        <p class="card_text">Clicando no botão abaixo vai abrir uma pagina que lá você informaça seus dados de acordo com o deu cadastro, para que ouver a reserva.</p>
+                        <a href="https://todosjuntosjaa.github.io/cardapio/index.html" style="text-decoration: none;"><button class="btn card_btn" >Entra</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/iconacomodacoes.png" style="width: 102.5%;height: 110%;margin-left: -2%;">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Acomodações</h2>
+                        <p class="card_text">Lá você ira informa seu nome se caso quiser retorno, nos informa o seu e-mail, a sua turma e a mensagem que nos quer enviar</p>
+                        <a href="sugestao.html" style="text-decoration: none;"><button class="btn card_btn">Entra</button></a>
+                    </div>
+                </div>
+            </li>
+           
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/iconservicos.png" style="width: 220.5%;height: 104%;margin-left: 3%;">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Serviços</h2>
+                        <p class="card_text">Nós da chapa junto com o professor Celso vamos organizar alguns esportes que serão exercidos em cada dia da semana.</p>
+                        <a href="jogos.html" style="text-decoration: none;"><button class="btn card_btn" style="margin-top: 30px;">Entra</button ></a>
+                    </div>
+                </div>
+            </li>
+            <li class="cards_item">
+                <div class="card">
+                    <div class="card_image">
+                        <img src="img/iconcadastro.png" style="width: 70.5%;height: 104%;margin-left: 14%;">
+                    </div>
+                    <div class="card_content">
+                        <h2 class="card_title">Cadastro</h2>
+                        <p class="card_text">Nós da chapa junto com o professor Celso vamos organizar alguns esportes que serão exercidos em cada dia da semana.</p>
+                        <a href="cadastro.html" style="text-decoration: none;"><button class="btn card_btn" style="margin-top: 30px;">Entra</button ></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+<!--Termino dos Cards-->
+
+        <!--Footer-->
+            <div style="background-color: black;">
+                <footer>
+                    <div class="footer-content">
+                        <h3 class="titulo"><img src="img/icon_hotel.png" style="width: 5%;">Hotel Urbano</h3>
+                        <p class="subtitulo">Este site foi criado por Gabriel Cordeiro Barroso Teles (2° Informática-B-JAA) para o desenvolvimento de um website para o Hotel Urbano.</p>
+                        <div class="todosicon">
+                            <a class="ri-whatsapp-line icon" id="zap" href="https://wa.me/message/EOCY3I25TW2ZL1" ></a>
+                            <a class="ri-instagram-line icon" id="insta" href="https://instagram.com/gbielcordeiro44/"></a>
+                            <a class="ri-github-line icon" id="github" href="https://github.com/GabrielCordeiroBarrosoTeles"></a>
+                            <p style="max-width: 500px; margin: 1px auto;line-height: 28px;font-size: 14px;"><a href="https://wa.me/message/EOCY3I25TW2ZL1" style="text-decoration: none;"> copyright &copy;2022 GabrielCordeiro <img src="img/cordeiro.png" alt="" style="width: 15%;margin-top: -5%;"></a>  </p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        <!--Termino do Footer-->
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script>
+            function boasvindas(){
+                alert("Seja Bem-vindo ao Web site do Hotel Urbano")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><!--CSS do Bootstrap-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Cadastro</title>
+        <style>
+            body{
+                background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/5003535-cor-gradiente-de-fundo-amarelo-e-vermelho-bonito-vetor.jpgs");
+            }
+            legend{
+                border: 1px solid dodgerblue;
+                padding: 10px;
+                text-align: center;
+                background-color: dodgerblue;
+                border-radius: 1px;
+            }
+            .inputBox{
+                position: relative;
+            }
+            .inputUser{
+                background: none;
+                border: none;
+                border-bottom: 1px solid white;
+                outline: none;
+                color: white;
+                font-size: 15px;
+                width: 100%;
+                letter-spacing: 2px;
+            }
+
+            .labelInput{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                pointer-events: none;
+                transition: .5s;
+            }
+            .inputUser:focus ~ .labelInput,
+            .inputUser:valid ~ .labelInput{
+                top: -20px;
+                font-size: 12px;
+                color: dodgerblue;
+            }
+            #data_nascimento{
+                border: none;
+                padding: 8px;
+                border-radius: 10px;
+                outline: none;
+                font-size: 15px;
+            }
+            .submit{
+                background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+                width: 100%;
+                border: none;
+                padding: 15px;
+                color: white;
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            .input{
+                background-color: white;
+                width: 100%;
+                border: none;
+                padding: 15px;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 10px;
+            }    
+            .phone{
+                background-color: white;
+                width: 100%;
+                border: none;
+                padding: 15px;
+                color: rgb(0, 0, 0);
+                font-size: 15px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            #submit:hover{
+                background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+            }::-webkit-scrollbar{
+                width: 10px;
+            }::-webkit-scrollbar-track{
+                background: #DD7E00;
+                border-radius: 30px;
+            }::-webkit-scrollbar-thumb{
+                background: #000000;
+                border-radius: 30px;
+            }
+        </style>
+        <script type='text/javascript' src='//code.jquery.com/jquery-compat-git.js'></script>
+        <script type='text/javascript' src='//igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js'></script>
+    </head>
+    <body>
+        <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Hotel Urbano</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reserva</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acomodações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Serviços</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <!--Terimino do Navbar-->
+
+        <!--Formulário-->
+            <div class="container mt-5" style="background-color: rgba(0, 0, 0, 0.185);color: white;border-radius: 15px;">
+                <div class="card" style="background-color: rgba(0, 0, 0, 0.3);border: 4px solid dodgerblue;border-radius: 10px;">
+                    <div class="card-header" style="text-align: center;background-color: dodgerblue;">
+                        <legend><b>Cadastro</b></legend>
+                    </div>
+                    <div class="card-body" style="background-color: rgba(0, 0, 0, 0.6);color: white;border: 2px solid rgba(0, 0, 0, 0);border-radius: 3px;">
+                        <form action="https://formsubmit.co/chapatodosj@gmail.com" method="POST">
+                            <fieldset> 
+                                <br>
+                                <br>
+                                <div class="inputBox">
+                                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                                    <label for="nome" class="labelInput">Nome completo</label>
+                                </div>
+                                <br>
+                                <br>
+                                    <p>
+                                        <label>
+                                            Telefone:<br>
+                                            <input type="text" name="Telefone" id="nome" class="phone"required/>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            Email:<br>
+                                            <input type="email" name="Email"  class="input" id="email" style="width: 250%;"/>
+                                        </label>
+                                     </p>
+                                     <p>
+                                        <label>
+                                            Data de nascimento:<br>
+                                            <div>
+                                                <input type="date" name="Data" class="input" value="">
+                                            </div>
+                                        </label>
+                                    </p>
+                                    <div class="inputBox">
+                                        <label for="inputState" class="form-label">Sexo:</label>
+                                        <select id="inputState" class="input" name="Turma">
+                                            <option selected disabled>Selecione</option>
+                                            <option>Masculino</option>
+                                            <option>Feminino</option>
+                                            <option>Prefiro não dizer</option>
+                                            <option>Outros</option>
+                                        </select>
+                                        <br>
+                                    </div>
+                                    <br>
+                                    <input type="hidden" name="_captcha" value="false" />
+                                    <input type="hidden"name="_next" value="https://todosjuntosjaa.github.io/EspacoMix/mvisita.html"/>
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <br>
+                                        <input type="submit" class="submit">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+        <!--Termino do Formulário-->
+
+        <!--Script-->
+            <script>
+                var behavior = function (val) {
+                    return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+                
+                },options = {
+                    onKeyPress: function (val, e, field, options) {
+                    field.mask(behavior.apply({}, arguments), options);
+                    }
+                };
+                $('.phone').mask(behavior, options);
+            </script>
+        <!--Termino do script-->
+    </body>
+</html>
